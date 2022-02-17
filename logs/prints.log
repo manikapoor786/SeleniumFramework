@@ -1,0 +1,3 @@
+17:10:57.107 [TestNG-tests-2] INFO  resources.base - Navigated to Home page
+17:11:00.920 [TestNG-tests-1] INFO  resources.base - Restrcited User
+17:11:06.917 [TestNG-tests-1] INFO  resources.base - Non restricted user

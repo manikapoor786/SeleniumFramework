@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Academy.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Validating login in the SalesForcesite(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.SalesForceTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="validateAppNavBar"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.SalesForceTest -->
+    </classes>
+  </test> <!-- Validating login in the SalesForcesite(failed) -->
+  <test thread-count="5" name="Validating User login(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.HomePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- Academy.HomePageTest -->
+    </classes>
+  </test> <!-- Validating User login(failed) -->
+  <test thread-count="5" name="Validating navigation Bar(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="validateAppNavBar"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+    </classes>
+  </test> <!-- Validating navigation Bar(failed) -->
+  <test thread-count="5" name="Validating title in the Page(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.validateTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="validateAppTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.validateTitle -->
+    </classes>
+  </test> <!-- Validating title in the Page(failed) -->
+</suite> <!-- Failed suite [Suite] -->
